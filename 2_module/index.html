@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-анимации и адаптивы</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#top" class="logo">
+        <span class="logo_mark"></span>
+        <span class="logo_text">css</span>
+      </a>
+
+      <nav class="menu">
+        <a href="" class="menu_link">тайминги</a>
+        <a href="" class="menu_link">бегущие строки</a>
+        <a href="" class="menu_link">спрайты</a>
+        <a href="" class="menu_link">плитки</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <p class="hero_eyebrow">учебный проект / 2 модуль</p>
+        <h1 class="hero_title">
+          <span class="hero_letter">а</span>
+          <span class="hero_letter">н</span>
+          <span class="hero_letter">и</span>
+          <span class="hero_letter">м</span>
+          <span class="hero_letter">а</span>
+          <span class="hero_letter">ц</span>
+          <span class="hero_letter">и</span>
+          <span class="hero_letter">я</span>
+        </h1>
+        <p class="section_lead">
+          Изучение css анимации и адаптивы: как работают transition, @keyframes,
+          @media, flexbox, тайминг-функции и покадровые анимации без
+          использования javascript
+        </p>
+      </section>
+
+      <section id="timing">
+        <h2 class="section_title">Тайминг-функции</h2>
+        <p class="section_lead">
+          Шесть шариков проходят одно и то же расстояние за одно и то же время,
+          но анимация отличается благодаря свойству timing-function
+        </p>
+
+        <div class="timing">
+          <div class="timing_row">
+            <p class="timing_label">linear</p>
+            <div class="timing_track">
+              <span class="timing_item linear"></span>
+              <span class="timing_ball"></span>
+            </div>
+          </div>
+
+          <div class="timing_row">
+            <p class="timing_label">ease</p>
+            <div class="timing_track">
+              <span class="timing_item ease"></span>
+              <span class="timing_ball"></span>
+            </div>
+          </div>
+
+          <div class="timing_row">
+            <p class="timing_label">ease-in</p>
+            <div class="timing_track">
+              <span class="timing_item ease-in"></span>
+              <span class="timing_ball"></span>
+            </div>
+          </div>
+
+          <div class="timing_row">
+            <p class="timing_label">ease-out</p>
+            <div class="timing_track">
+              <span class="timing_item ease-out"></span>
+              <span class="timing_ball"></span>
+            </div>
+          </div>
+
+          <div class="timing_row">
+            <p class="timing_label">ease-in-out</p>
+            <div class="timing_track">
+              <span class="timing_item ease-in-out"></span>
+              <span class="timing_ball"></span>
+            </div>
+          </div>
+
+          <div class="timing_row">
+            <p class="timing_label">steps</p>
+            <div class="timing_track">
+              <span class="timing_item steps"></span>
+              <span class="timing_ball"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.hero_letter {
+  animation: letters-jump 2.4s ease-in-out infinite;
+}
+.hero_letter:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+.hero_letter:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+.hero_letter:nth-of-type(4) {
+  animation-delay: 0.3s;
+}
+.hero_letter:nth-of-type(5) {
+  animation-delay: 0.4s;
+}
+.hero_letter:nth-of-type(6) {
+  animation-delay: 0.5s;
+}
+.hero_letter:nth-of-type(7) {
+  animation-delay: 0.6s;
+}
+.hero_letter:nth-of-type(8) {
+  animation-delay: 0.7s;
+}
+@keyframes letters-jump {
+  0% {
+    color: #161616;
+    transform: translateY(0);
+  }
+  20% {
+    color: hsl(240, 51%, 35%);
+    transform: translateY(-1.2rem);
+  }
+  40% {
+    color: #161616;
+    transform: translateY(0);
+  }
+}
+
+@keyframes timing {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(3800%);
+  }
+}
+.timing_ball {
+  animation: timing 3s infinite alternate;
+}
+.linear + .timing_ball {
+  animation-timing-function: linear;
+}
+.ease + .timing_ball {
+  animation-timing-function: ease;
+}
+
+.ease-in + .timing_ball {
+  animation-timing-function: ease-in;
+}
+
+.ease-out + .timing_ball {
+  animation-timing-function: ease-out;
+}
+.ease-in-out + .timing_ball {
+  animation-timing-function: ease-in-out;
+}
+.steps + .timing_ball {
+  animation-timing-function: steps(9);
+}

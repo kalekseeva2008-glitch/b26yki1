@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+  header {
+    justify-content: center;
+    bottom: 0;
+    top: auto;
+    border-top: 1px solid #e2e2e2;
+  }
+  .menu {
+    bottom: 0;
+    justify-content: center;
+  }
+}
